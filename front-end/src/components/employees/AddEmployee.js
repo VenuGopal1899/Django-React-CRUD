@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import API_URL from '../constants/Index';
+import API_URL from '../../constants/Index';
+import {Redirect} from 'react-router-dom';
 
 class AddEmployee extends Component{
   state = {
@@ -14,7 +15,7 @@ class AddEmployee extends Component{
   componentDidMount(){
     if(this.props.employee){
       const { pk, eid, ename, email, phone } = this.props.employee;
-      this.setState({ pk, eid, ename, email, phone });
+      this.setState({ pk , eid, ename, email, phone });
     }
   }
 
@@ -24,18 +25,35 @@ class AddEmployee extends Component{
 
   addEmployee = (e) => {
     e.preventDefault();
-    axios.post(API_URL, this.state).then(() => {
-      this.props.resetState();
-      this.props.toggle();
-    });
+    try{
+      axios.post(API_URL, this.state, {headers: {Authorization: `JWT ${localStorage.getItem('token')}`}
+      }).then(() => {
+        this.props.resetState();
+        this.props.toggle();
+      });
+    }
+    catch{
+      return(
+        <Redirect to='http://localhost:3000/'/>
+      );
+    }
   };
 
   editEmployee = (e) => {
     e.preventDefault();
-    axios.put(API_URL + this.state.pk + "/", this.state).then(() => {
-      this.props.resetState();
-      this.props.toggle();
-    });
+    try{
+      axios.put(API_URL + this.state.pk + "/", this.state,
+        { headers: {Authorization: `JWT ${localStorage.getItem('token')}` }})
+        .then(() => {
+        this.props.resetState();
+        this.props.toggle();
+      });
+    }
+    catch(err){
+      return(
+        <Redirect to='http://localhost:3000/'/>
+      );
+    }
   };
 
   defaultIfEmpty = (value) => {
