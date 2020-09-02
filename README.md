@@ -21,11 +21,11 @@ Github Repo : ​Django-React-CRUD
 Django-React-CRUD App is used to perform CRUD Operations (Create,
 Read, Update,Delete) on the Employee Records of XYZ Company.
 **Requirements :**
-● List the Employee Records of XYZ Company
-● User should be Create (Add new employee), Read (Read the list of
+- List the Employee Records of XYZ Company
+- User should be Create (Add new employee), Read (Read the list of
 employees), Update (Update the details of existing employee) and
 Delete (Delete an employee from the list)
-● Only Authenticated Users should be able to perform Create, Update
+- Only Authenticated Users should be able to perform Create, Update
 and Delete Operations (they must be protected) whereas any user
 should be able to perform Read Operation and get the list of
 employees
@@ -101,31 +101,31 @@ accounts in the backend API
 ## Validations:
 
 **Adding a new Employee to DataBase:**
-● EMP ID : Employee ID will be Unique ID assigned by the company
+- EMP ID : Employee ID will be Unique ID assigned by the company
 to that particular Employee (Cannot be Empty)
-● EMP Name : Name of the Employee (Cannot be Empty)
-● EMAIL : Mail ID of the Employee (Cannot be Empty and should be
+- EMP Name : Name of the Employee (Cannot be Empty)
+- EMAIL : Mail ID of the Employee (Cannot be Empty and should be
 valid mail id (Validated based on Input type))
-● Phone : Contact number of the Employee (Cannot be Empty and
+- Phone : Contact number of the Employee (Cannot be Empty and
 Input should be a valid phone number(Validated based on RegEx -
 Regular Expression)))
 
 
 **Editing an existing Employee from the DataBase:**
-● Initially, existing data from the database will be loaded on the form,
+- Initially, existing data from the database will be loaded on the form,
 but can be edited as per requirements
-● EMP ID : Employee ID will be Unique ID assigned by the company
+- EMP ID : Employee ID will be Unique ID assigned by the company
 to that particular Employee (Cannot be Empty)
-● EMP Name : Name of the Employee (Cannot be Empty)
-● EMAIL : Mail ID of the Employee (Cannot be Empty and should be
+- EMP Name : Name of the Employee (Cannot be Empty)
+- EMAIL : Mail ID of the Employee (Cannot be Empty and should be
 valid mail id (Validated based on Input type))
-● Phone : Contact number of the Employee (Cannot be Empty and
+- Phone : Contact number of the Employee (Cannot be Empty and
 Input should be a valid phone number(Validated based on RegEx -
 Regular Expression)))
 
 
 **Delete an Employee from the DataBase:**
-● On clicking Delete button, alert will pop up asking for deletion
+- On clicking Delete button, alert will pop up asking for deletion
 confirmation
-● On further confirmation, employee will be deleted from the database
-● On selecting Cancel, no changes will be made to the database
+- On further confirmation, employee will be deleted from the database
+- On selecting Cancel, no changes will be made to the database
