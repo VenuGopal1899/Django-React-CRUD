@@ -56,27 +56,30 @@ employees
 5. Once the virtual environment is activated, the name (​ **xyz_env** ​) of
     your virtual environment will appear on the left side of your terminal.
     This will let you know that the virtual environment is currently active.
-    (As shown in Fig-1 below)
 6. Now run the command : ​ **pip3 install -r requirements.txt**
 7. This will download all python packages required for the project
 
-**Backend :**
+## Backend :
+
 8. Now, change directory, ​ **cd django_react_proj**
 9. To start and run the Backend server, use the command:
-**python manage.py runserver** ​ (In ​ **django_react_proj** ​folder)
-(As shown in Fig-2 below)
-```
+   **python manage.py runserver** ​ (In ​ **django_react_proj** ​folder)
 10. This will run our backend api on localhost:8000/
+
+```
+This will run our backend api on localhost:8000/
 ```
 11. Open localhost:8000/api/employees in browser. This allows you to
 check your current status of db.
-​ **Frontend :**
+
+## Frontend :
+
 12. To start running front-end make sure NodeJS is installed on your
-system. Now, open Node.js command prompt.
+    system. Now, open Node.js command prompt.
 13. Change your current directory from root (Root user) to ​ **front-end**
-​ **folder** ​ and run the command :​ **npm install**
+​   **folder** ​ and run the command :​ **npm install**
 14. This will install all node-packages required based on package.json
-file in the ​ **front-end folder**
+    file in the ​ **front-end folder**
 15. After successful installation, run command: ​ **npm start**
 
 ```
