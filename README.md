@@ -22,7 +22,7 @@ Django-React-CRUD App is used to perform CRUD Operations (Create,
 Read, Update,Delete) on the Employee Records of XYZ Company.
 **Requirements :**
 - List the Employee Records of XYZ Company
-- User should be Create (Add new employee), Read (Read the list of
+- User should be able to perform Create (Add new employee), Read (Read the list of
 employees), Update (Update the details of existing employee) and
 Delete (Delete an employee from the list)
 - Only Authenticated Users should be able to perform Create, Update
@@ -94,9 +94,9 @@ let you perform all required CRUD Operations on the backend.
 
 ## Authentication:
 
-For now, Sign Up feature hasn’t been added and form validation is done
-using brute force, but this can be further developed into database of User
-accounts in the backend API
+For now, Sign Up feature hasn’t been added and form validation is done using Auth Token,
+but this can be further developed into database of User accounts in the backend API
+
 
 ## Validations:
 
