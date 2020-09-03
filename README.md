@@ -1,6 +1,5 @@
-```
 # XYZ Company
-```
+
 ~ Employee Records
 
 ## Contents:
